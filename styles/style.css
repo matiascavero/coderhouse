@@ -227,7 +227,7 @@ form div{
     border: solid;
     border-radius: 35px;
     border-color: black;
-    width: 60%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -248,16 +248,15 @@ form div{
       width: 100%;
       
     }
-    .text{
-        font-size: 1.3em;
-       }
+   
+       
        /* pagina de login */
     .formularios{
         width: 68%;
-        height: 400px;
+        height:400px;
         display: flex;
         flex-direction: column;
-        font-size: 1.4em;
+         font-size: 1em;
 }
        /* footer */
     .responsiv420{
@@ -283,7 +282,7 @@ form div{
        width: 100%;
        }
        .text{
-        font-size: 1.3em;
+        font-size: 1.2em;  
        }
        /* footer */
     .responsiv420{
@@ -317,7 +316,7 @@ form div{
     } 
     .formularios{
         width: 78%;
-        height: 300px;
+        height: 400px;
         display: flex;
         flex-direction: column;
         
