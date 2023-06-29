@@ -1,0 +1,387 @@
+body {
+     background-color:  #800080;
+
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* para ajustar el tamaño de todos los h2 */
+h2{
+   font-size: 1.5em;
+}
+#logo{
+    /* tamaño del logo que va en todas las paginas*/
+    width: 80px;
+    height: auto;
+}
+.map{
+    /* para el tamaño de los mapas */
+    width: 440px;
+    height: 340px;
+}
+
+  nav .div1{
+     background-color: black;
+     padding: 6px 35px; 
+    /* position: sticky;
+    border: dashed;
+    border-color: azure;
+    */} 
+ nav h2{
+    text-decoration: none;
+    margin-left: 8px;  
+    font-size: 1.7em;
+ }
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    
+}
+
+nav ul li{
+     margin-right: 15px;   
+}
+
+ nav ul li a{
+    text-decoration: none; 
+    color: rgb(8, 7, 7);
+    font-size: 1.1rem;   
+} 
+
+.whit{
+    /*a las palabras le pongo white para que se note por el fondo*/
+    color: white;
+}
+
+
+i:hover{
+    /* que cambie de color la palabra cuando el mouse pasa por arriba */
+    color:  #800080;
+}
+
+.fijo{
+    /* para las paginas el link */
+    color:  #800080;
+}
+.cap {
+    /* para los figcaption */
+    color: rgba(25, 211, 218, 0.822);
+    font-size: 1.25rem;
+}
+
+.center{
+    /* para centrar textos */
+    text-align: center;
+}
+    
+.text{
+    background-color: black;
+     /* #35522c; */
+     margin-top: 20px;
+    
+    
+}
+.tam{
+    /* para los iconos marcas */
+    width: 54px;
+    height: 49px;
+}
+.letra-login{
+    font-size: 0.8rem ;
+}
+.log{
+    /* los iconos redes sociales */
+    width: 55px;
+    height: 55px;  
+    padding-top: 15px;
+    padding-right: 8px;
+    
+}
+/*MAIN NOSOTROS*/
+.main-nosotros {
+    display: flex;
+    flex-direction: column;
+    
+}
+.separarnav{
+    /* para que las cosas no queden abajo de la nav */
+    margin-top: 120px;
+}
+
+.mapas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 6px;
+    
+}
+
+.flex {
+    display: flex;
+}
+.prod{
+    display: flex;
+
+    width: 200px
+}
+.bord{
+    
+    border-width:3px;
+    border-radius: 10px;
+    border: double;
+    border-color: azure;
+    margin: 3px;
+}
+.container1{
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.right{
+    text-align: center;
+
+}
+
+ div figure {
+    text-align: center;
+    align-items: center;
+    border: solid;
+    border-width:5px;
+    border-radius: 10px;
+    border-color:  #800080;
+    /* margin-left:20px ;  */
+    width: 300px;
+}
+
+figure img {
+    margin-left: 40px;
+}
+
+figure button{
+    border: solid 2px ;
+    border-radius: 3px;
+    border-color: rgba(67, 121, 134, 0.822);
+    background-color: black;
+    color:   #800080;
+    font-size: 1rem;
+    /* rgb(29, 131, 117); */
+    margin: 10px;
+    text-align: center;
+    width: 90%;
+    height: 9%;
+    
+} 
+
+.grid-fig{
+    display: grid;
+    grid-template-rows:  auto auto;
+    grid-template-columns: 15% 25% 25% ;
+    grid-template-areas: 
+    "categorias fig1 fig2 fig3"
+    "categorias fig4 fig5 fig6";
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+
+}
+
+.f1{
+  grid-area: fig1;
+  
+}
+.f2{
+  grid-area: fig2;
+ 
+}
+.f3{
+  grid-area: fig3;
+  
+}
+.f4{
+  grid-area: fig4;
+  
+}
+.f5{
+  grid-area: fig5;
+  
+
+}
+.f6{
+  grid-area: fig6;
+  
+}
+.cat7{
+    grid-area: categorias;
+}
+form div{
+    margin: 5px 5px;
+
+}
+.formularios{
+    background-color: #1b5155 ;
+    border: solid;
+    border-radius: 35px;
+    border-color: black;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-size: 1.2em;
+    
+}
+
+.headimg{
+    /* la imagen del inicio */
+    width: 1340px;
+}
+/* responsive menos de 2000 */
+@media(width<2000px){
+    .headimg{
+      width: 100%;
+      
+    }
+    .text{
+        font-size: 1.3em;
+       }
+       /* pagina de login */
+    .formularios{
+        width: 68%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4em;
+}
+       /* footer */
+    .responsiv420{
+        width:650px;
+        padding: 20px 20px;
+   }
+       .container1{
+        justify-content: space-around;
+        padding: 10px 10px;
+    }
+    /* logos de las marcas */
+    .tam{
+        /* logos de marcas */
+        width: 60px;
+        height: 55px;
+    }
+
+}
+/* responsive menos de 1600  */
+@media (width < 1600px)
+   {       
+       .headimg{
+       width: 100%;
+       }
+       .text{
+        font-size: 1.3em;
+       }
+       /* footer */
+    .responsiv420{
+        width:600px;
+        padding: 20px 20px;
+   }
+       .container1{
+        justify-content: space-around;
+        padding: 10px 10px;
+    }
+    /* pagina de login */
+    .formularios{
+        width: 68%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+}
+   }
+
+/* responsive menos de 992 */
+@media (width < 992px){
+    .headimg{
+        width: 100%;
+    }
+
+    /* pag login */
+       .loginresponsiv{
+        display: column;
+        /* font-size: 1.1em; */
+        
+    } 
+    .formularios{
+        width: 78%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    /* footer */
+    .responsiv420{
+        width:400px;
+        padding: 20px 20px;
+       
+        
+   }
+       .container1{
+        justify-content: space-around;
+        padding: 10px 10px;
+    }
+     
+    .tam{
+        /* logos de marcas */
+        width: 50px;
+        height: 40px;
+    }
+    
+}
+/*  */
+
+
+/* responsive menos de 420 */
+@media ( width< 420px){
+    .headimg{
+       width: 100%;
+    }
+    .responsiv420{
+        width: 200px;
+        padding: 10px 10px;
+       
+        
+       }
+       .container1{
+        justify-content: start;
+    }
+       
+    .loginresponsiv{
+        display: column;
+        /* font-size: 1.1em; */
+        
+    } 
+    .formularios{
+        width: 78%;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .tam{
+        /* logos de marcas */
+        width: 40px;
+        height: 35px;
+    }
+    .log{
+        /* logos de redes sociales */
+        width: 46px;
+        
+    }
+    
+}
