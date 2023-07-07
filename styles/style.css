@@ -342,6 +342,7 @@ form div{
         width: 60px;
         height: 55px;
     }
+   
 
 }
 /* responsive menos de 1600  */
@@ -408,10 +409,53 @@ form div{
         width: 50px;
         height: 40px;
     }
+    figure{
+        width: 60%;
+        margin: 4px;
+    }
+    figure button{
+        width: 90%;
+        margin: 5px;
+        font-size: 0.9em;
+        
+    }
+
+   
+    .grid-fig{
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "fig1 fig2"
+    "fig3 fig4"
+    "fig5 fig6";
+    justify-items: center;
+    }
     
 }
-/*  */
-
+/* hago menos de 660 para los figure */
+@media ( width< 660px){
+    figure{
+        width: 80%;
+        margin: 10px;
+    }
+    figure button{
+        width: 90%;
+        margin: 5px;
+        font-size: 0.9em;
+    }
+    .grid-fig{
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "fig1 fig2"
+    "fig3 fig4"
+    "fig5 fig6";
+    justify-items: center;
+    }
+    .prod{
+        width: 78%;
+    }
+}
 
 /* responsive menos de 420 */
 @media ( width< 420px){
@@ -451,6 +495,34 @@ form div{
         width: 46px;
         
     }
+    figure{
+        width: 75%;
+        margin: 4px;
+    }
+    figure button{
+        width: 90%;
+        margin: 5px;
+        font-size: 0.9em;
+        
+    }
+   
+    .grid-fig{
+    grid-template-rows: auto auto auto auto auto auto ;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "fig1"
+    "fig2"
+    "fig3"
+    "fig4"
+    "fig5"
+    "fig6";
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+    }
+    
+   
     
 }
 
