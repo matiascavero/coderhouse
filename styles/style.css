@@ -159,15 +159,16 @@ i:hover{
 
 }
 
- div figure {
+ 
+figure {
     text-align: center;
     align-items: center;
     border: solid;
     border-width:5px;
     border-radius: 10px;
-    border-color:  #800080;
-    /* margin-left:20px ;  */
+    border-color:  #800080; 
     width: 300px;
+    margin: 10px;
 }
 
 figure img {
@@ -189,13 +190,14 @@ figure button{
     
 } 
 
-.grid-fig{
+/* usando grid para los productos destacados */
+ .grid-fig{
     display: grid;
     grid-template-rows:  auto auto;
-    grid-template-columns: 15% 25% 25% ;
+    grid-template-columns: 33% 33% 33% ;
     grid-template-areas: 
-    "categorias fig1 fig2 fig3"
-    "categorias fig4 fig5 fig6";
+    "fig1 fig2 fig3"
+    "fig4 fig5 fig6";
     grid-column-gap: 30px;
     grid-row-gap: 15px;
 
@@ -226,9 +228,65 @@ figure button{
   grid-area: fig6;
   
 }
-.cat7{
-    grid-area: categorias;
+
+/* grid para los pruductos en su seccion */
+.grid-fig2{
+    display: grid;
+    grid-template-rows: auto auto auto ;
+    grid-template-columns: 10% 30% 30% 30% ;
+    grid-template-areas: 
+    "categoria prod1 prod2 prod3"
+    "categoria prod4 prod5 prod6"
+    "categoria prod7 prod8 prod9"
+    ;
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+   
+
 }
+.p1{
+    grid-area: prod1;
+    
+  }
+  .p2{
+    grid-area: prod2;
+   
+  }
+  .p3{
+    grid-area: prod3;
+    
+  }
+  .p4{
+    grid-area: prod4;
+    
+  }
+  .p5{
+    grid-area: prod5;
+    
+  }
+  .p6{
+    grid-area: prod6;
+    
+  }
+  .p7{
+    grid-area: prod7;
+    
+  }
+  .p8{
+    grid-area: prod8;
+    
+  }
+  .p9{
+    grid-area: prod9;
+    
+  }
+  .categori{
+    grid-area: categoria;
+  }
+
+
+
+
 form div{
     margin: 5px 5px;
 
