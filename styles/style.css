@@ -81,10 +81,21 @@ i:hover{
 }
     
 .text{
+    /* para fondos de texto */
     background-color: black;
      /* #35522c; */
-     margin-top: 20px;
-    
+     margin-top: 20px;  
+}
+.text2{
+    /* para fondo de textos 2 */
+    background-color: #2a2323;
+   
+}
+.text3{
+    /* background-color para los encabezados de los mapas en nosotros */
+    background-color: #2a2323;
+    width: 100%;
+    width: auto;
     
 }
 .tam{
