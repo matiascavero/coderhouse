@@ -314,10 +314,18 @@ form div{
     /* la imagen del inicio */
     width: 1340px;
 }
+/* la imagen de la pag nosotros */
+.img-nosotros{
+    height:440px ;
+    width:100%;
+}
 /* responsive menos de 2000 */
 @media(width<2000px){
     .headimg{
       width: 100%;
+      
+    }
+    .grid-fig{
       
     }
    
@@ -349,8 +357,8 @@ form div{
 
 }
 /* responsive menos de 1600  */
-@media (width < 1600px)
-   {       
+@media (width < 1600px){
+         
        .headimg{
        width: 100%;
        }
@@ -373,6 +381,25 @@ form div{
         display: flex;
         flex-direction: column;
 }
+.img-nosotros{
+    /* para que la imagen de nosotros q esta en el header se vea bien */
+    width: 100%;
+}
+
+
+/* para los mapas de la pag nosotros */
+
+.tamaño-mapa{
+    margin: 10px;
+}
+
+
+}
+   /* asssssss */
+   @media(width<1365){
+    .img-nosotros{
+        width: 100%;
+    }
    }
 
 /* responsive menos de 992 */
