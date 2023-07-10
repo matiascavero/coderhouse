@@ -158,7 +158,10 @@ i:hover{
     text-align: center;
 
 }
-
+.fotspace{
+    /* el margin que usamos en el footer */
+    margin-bottom: 15px ;
+}
  
 figure {
     text-align: center;
