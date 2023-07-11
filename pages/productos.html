@@ -46,29 +46,41 @@
            
         
     </header>
-       <main class="separarnav">
-       <div class="text flex grid-fig2">
-        <ul class="categori">
-          <h2 class="whit">Productos</h2>
-         <li class="whit">Placas de video</li>
-         <li class="whit">Procesadores</li>
-         <li class="whit">Monitores</li>
-         <li class="whit">Perifericos</li>
-         <li class="whit">Gababinetes</li>
-         <li class="whit">Fuentes</li>
-         <li class="whit">Memorias ram</li>
-        </ul>
+       <main class="separarnav ">
+       <div class="text flex divprodc">
+       <div class="categori">
+
+        <button class="btn btn-primary botonproductos " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Categorias</button>
+
+             <div class="offcanvas offcanvas-top botonproductos" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+             <div class="offcanvas-header">
+           <h5 id="offcanvasTopLabel">Categorias</h5>
+         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+           </div>
+           <div class="offcanvas-body ulproductos">
+            <ul class="ulproductos " id=""></ul>
+            <li class="whit separacionlista" href="#">Placas de video</li>
+            <li class="whit separacionlista" href="#">Procesadores</li>
+            <li class="whit separacionlista" href="#">Monitores</li>
+            <li class="whit separacionlista" href="#">Perifericos</li>
+            <li class="whit separacionlista" href="#">Gababinetes</li>
+            <li class="whit separacionlista" href="#">Fuentes</li>
+            <li class="whit separacionlista" href="#">Memorias ram</li>
+           </ul>
+            </div>
+       </div>
+        </div>
 
    
-      
-        <figure class="p1">
+        <section class="grid-fig2">
+        <figure class="col-md-3 ">
         <img src="../proyecto/img/productos/placa1.png" alt="placa de video nvidia" class="prod">
         <figcaption class="cap">placa de de video nvidia gtx</figcaption>
         <p class="whit">$200.000</p>
         <button>Agregar al carrito</button>
        </figure>
 
-       <figure class="p2">
+       <figure class="col-md-3 f">
        
         <img src="../proyecto/img/productos/madre1.png" alt="placa madre asr" class="prod">
         <figcaption class="cap"> placa madre 478hx asrock</figcaption>
@@ -76,7 +88,7 @@
         <button>Agregar al carrito</button>
        </figure>
 
-       <figure class="p3">
+       <figure class="col-md-3 f">
        
         <img src="../proyecto/img/productos/ram1.png" alt="memoria ram sas" class="prod">
         <figcaption class="cap">Memoria ram 8G 3000hz</figcaption>
@@ -84,7 +96,7 @@
         <button>Agregar al carrito</button>
        </figure>
 
-       <figure class="p4">
+       <figure class="col-md-3 f">
       
         <img src="../proyecto/img/productos/proc1.png" alt="intel 10TH gen core i7" class="prod">
         <figcaption class="cap">Intel core i7</figcaption>
@@ -92,7 +104,7 @@
         <button>Agregar al carrito</button>
         </figure>
         
-        <figure class="p5">
+        <figure class="col-md-3 f ">
        
         <img src="../proyecto/img/productos/fuente1.png" alt="fuente masterplus" class="prod">
         <figcaption class="cap">Fuente de energia 80plus bronce 500W</figcaption>
@@ -100,7 +112,7 @@
         <button>Agregar al carrito</button>
         </figure>
 
-        <figure class="p6">
+        <figure class="col-md-3 f">
 
           <img src="../proyecto/img/productos/ram2.png" alt="2 ram 8ram 2900hz" class="prod">
           <figcaption class="cap">Dos memorias ram 8G 2900HZ</figcaption>
@@ -108,38 +120,30 @@
              <button> agregar al carrito</button>
         </figure>
 
-        <figure class="p7">
+        <figure class="col-md-3 f">
 
-          <img src="../proyecto/img/productos/gabinete-deepcool.jpg" alt="gabinete deepcool" class="prod">
+          <img src="../proyecto/img/productos/gabinete-deepcoolf.png" alt="gabinete deepcool" class="prod">
           <figcaption class="cap">Gabinete deepcool</figcaption>
           <p class="whit">$ 60.000</p>
              <button> agregar al carrito</button>
         </figure>
 
-        <figure class="p8">
+        <figure class="col-md-3 f">
 
-          <img src="../proyecto/img/productos/monitor-samsung.jpg" alt="Monitor samsung 144hz" class="prod">
+          <img src="../proyecto/img/productos/monitor-samsungf.png" alt="Monitor samsung 144hz" class="prod">
           <figcaption class="cap">Monitor samsung 144hz 24P</figcaption>
           <p class="whit">$ 120.000</p>
              <button> agregar al carrito</button>
         </figure>
 
-        <figure class="p9">
+        <figure class="col-md-3 f">
 
-          <img src="../proyecto/img/productos/silla-gamer-vertagear-racing-series.jpg" alt="silla gamer" class="prod">
+          <img src="../proyecto/img/productos/silla-gamerf.png" alt="silla gamer" class="prod">
           <figcaption class="cap">Silla Gamer Vertagear Racing Series PL-4500</figcaption>
           <p class="whit">$ 300.000</p>
              <button> agregar al carrito</button>
         </figure>
-     
-
-
-
-
-
-
-
-
+        </section>
     </div>
    
   </main>
@@ -175,15 +179,16 @@
                   </svg></a>
                 </div>
               
-             <div class="d-flex justify-content-around">
-                 <img src="../proyecto/img/Intel_logo.png" alt="intel-logo" class="tam">
-                 <img src="../proyecto/img/ryzen2.png" alt="ryzen-logo" class="tam">
-                 <img src="../proyecto/img/redragon-logo.png" alt="redragon-logo" class="tam">
-                 <img src="../proyecto/img/LG-logo1.png" alt="lg-logo" class="tam">
-                 <img src="../proyecto/img/aorus.png" alt="aorus-logo" class="tam">
-                 <img src="../proyecto/img/gygabyte-logo.jpg" alt="gygabyte-logo" class="tam">
-                 <img src="../proyecto/img/aerocool-logo.jpg" alt="aerocool-logo" class="tam">
-        </div>>
+                <div class="d-flex justify-content-around">
+                  <img src="../proyecto/img/Intel_logo.png" alt="intel-logo" class="tam">
+                  <img src="../proyecto/img/ryzenf.png" alt="ryzen-logo" class="tam">
+                  <img src="../proyecto/img/redragon-logo.png" alt="redragon-logo" class="tam">
+                  <img src="../proyecto/img/LG-logof.png" alt="lg-logo" class="tam">
+                  <img src="../proyecto/img/aorusf.png" alt="aorus-logo" class="tam">
+                  <img src="../proyecto/img/gygabyte-logof.png" alt="gygabyte-logo" class="tam">
+                  <img src="../proyecto/img/aerocool-logof.png" alt="aerocool-logo" class="tam">
+         
+              </div>
      </footer>
     
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>

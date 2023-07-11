@@ -128,10 +128,12 @@ i:hover{
 .mapas {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 6px;
     
 }
+
+
 
 .flex {
     display: flex;
@@ -151,7 +153,7 @@ i:hover{
 }
 .container1{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
    
 }
 .right{
@@ -233,62 +235,35 @@ figure button{
 }
 
 /* grid para los pruductos en su seccion */
-.grid-fig2{
-    display: grid;
-    grid-template-rows: auto auto auto ;
-    grid-template-columns: 10% 30% 30% 30% ;
-    grid-template-areas: 
-    "categoria prod1 prod2 prod3"
-    "categoria prod4 prod5 prod6"
-    "categoria prod7 prod8 prod9"
-    ;
-    grid-column-gap: 30px;
-    grid-row-gap: 15px;
-   
-
+.categori{
+    justify-content: center;
 }
-.p1{
-    grid-area: prod1;
-    
-  }
-  .p2{
-    grid-area: prod2;
-   
-  }
-  .p3{
-    grid-area: prod3;
-    
-  }
-  .p4{
-    grid-area: prod4;
-    
-  }
-  .p5{
-    grid-area: prod5;
-    
-  }
-  .p6{
-    grid-area: prod6;
-    
-  }
-  .p7{
-    grid-area: prod7;
-    
-  }
-  .p8{
-    grid-area: prod8;
-    
-  }
-  .p9{
-    grid-area: prod9;
-    
-  }
-  .categori{
-    grid-area: categoria;
-  }
 
+  .grid-fig2{
+    display: flex;
+    flex-wrap: wrap;
 
-
+  }
+  /* boton de productos */
+  .botonproductos{
+    background-color: #800080;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .btn-primary{
+    --bs-btn-hover-bg: #800080;
+    
+    list-style: none;
+    list-style-image: none;
+    text-decoration: none;
+}
+/* es el div q contiene el boton de filtros y los productos */
+.divprodc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 form div{
     margin: 5px 5px;
@@ -309,6 +284,17 @@ form div{
     font-size: 1.1em;
     
 }
+.ulproductos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+}
+.separacionlista{
+    margin-left: 20px;
+   
+}
+
 
 .headimg{
     /* la imagen del inicio */
@@ -325,11 +311,6 @@ form div{
       width: 100%;
       
     }
-    .grid-fig{
-      
-    }
-   
-       
        /* pagina de login */
     .formularios{
         width: 68%;
@@ -353,8 +334,13 @@ form div{
         width: 60px;
         height: 55px;
     }
-   
-
+    .grid-fig2{
+        justify-content: center;
+    }
+}
+.header-nosotros{
+/*para ajustar el tamaño de las letras del apartado nosotros */
+font-size: 1.2em;
 }
 /* responsive menos de 1600  */
 @media (width < 1600px){
@@ -386,20 +372,35 @@ form div{
     width: 100%;
 }
 
-
-/* para los mapas de la pag nosotros */
-
-.tamaño-mapa{
-    margin: 10px;
-}
-
-
 }
    /* asssssss */
-   @media(width<1365){
+   @media(width<1340){
     .img-nosotros{
         width: 100%;
     }
+    .header-nosotros{
+        /*para ajustar el tamaño de las letras del apartado nosotros */
+    font-size: 1.1em;
+   }
+   /* responsiv para el apartado de productos */
+   figure{
+    width: 60%;
+    margin: 4px;
+}
+figure button{
+    width: 90%;
+    margin: 5px;
+    font-size: 0.9em;
+    
+}
+   }
+   @media(width<1060){
+    .col-md-3 {
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+      
+    
    }
 
 /* responsive menos de 992 */
@@ -439,6 +440,7 @@ form div{
         width: 50px;
         height: 40px;
     }
+    /* productos destacados */
     figure{
         width: 60%;
         margin: 4px;
@@ -449,8 +451,6 @@ form div{
         font-size: 0.9em;
         
     }
-
-   
     .grid-fig{
     grid-template-rows: auto auto auto;
     grid-template-columns: 50% 50%;
@@ -460,6 +460,21 @@ form div{
     "fig5 fig6";
     justify-items: center;
     }
+    /* nosotros */
+    .mapas{
+        flex-direction: column;
+        
+    }
+   
+    .prod{
+        width: 70% ;
+    }
+    /* productos */
+    /* .col-md-3 {
+        flex-basis: 60%;
+        max-width: 60%;
+      } */
+
     
 }
 /* hago menos de 660 para los figure */
@@ -481,10 +496,22 @@ form div{
     "fig3 fig4"
     "fig5 fig6";
     justify-items: center;
+    grid-column-gap: 16px;
     }
     .prod{
-        width: 78%;
+        width: 70%;
     }
+    .header-nosotros{
+        /*para ajustar el tamaño de las letras del apartado nosotros */
+    font-size: 1em;
+   }
+    /* tamaños de los mapas en nosotros */
+   .map{
+   width: 100%;
+   }
+   .tamaño-mapa{
+    width: 100%;
+   }
 }
 
 /* responsive menos de 420 */
@@ -493,18 +520,21 @@ form div{
        width: 100%;
     }
     .responsiv420{
-        width: 200px;
+        width: 100%;
         padding: 10px 10px;
+        font-size: 0.9em;
+       
        
         
        }
        .container1{
-        justify-content: start;
-    }
+        justify-content: center;
+        flex-direction: column;
+            }
        
     .loginresponsiv{
         display: column;
-        /* font-size: 1.1em; */
+        
         
     } 
     .formularios{
@@ -551,9 +581,22 @@ form div{
     align-items: center;
     
     }
+    /* tamaños de los mapas en nosotros */
+   .map{
+    width: 100%;
     
-   
-    
+    }
+    .tamaño-mapa{
+     width: 100%;
+    }
+/* formulario de contacto */
+.form2{
+    width: 100%;
+    height: 500px;
+    font-size:1em ;
+}  
 }
+
+ 
 
 
