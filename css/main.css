@@ -1,0 +1,543 @@
+@charset "UTF-8";
+/***mixin figure***/ /* todo lo general de mi proyecto */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* fondo de pantalla */
+  background-color: #800080;
+}
+
+h2 {
+  /* titulos de h2 */
+  font-size: 1.5em;
+}
+
+.whit {
+  /* color para las letras */
+  color: rgb(240, 230, 230);
+}
+
+/* fondos para los textos */
+.text {
+  background-color: rgb(13, 12, 12);
+  margin-top: 20px;
+}
+
+.text2 {
+  background-color: #2c2d2a;
+}
+
+.center {
+  /* para centrar textos */
+  text-align: center;
+}
+
+.separarnav {
+  /* para separar las cosas que quedan debajo de la nav */
+  margin-top: 120px;
+}
+
+.fijo {
+  /*para palabras que queden con el color primario fijo*/
+  color: #800080;
+}
+
+i:hover {
+  /*para que las palabras con <i> cambien de color cuando el mouse pasa por encima*/
+  color: #800080;
+}
+
+/**** NAV ****/
+nav .div1 {
+  /* la clase div1 envuelve a todo lo que esta dentro de la nav */
+  background-color: rgb(13, 12, 12);
+  padding: 6px 35px;
+}
+nav .div1 ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+nav .div1 ul li {
+  margin-right: 15px;
+}
+nav .div1 ul li a {
+  text-decoration: none;
+  font-size: 1.1em;
+}
+nav .div1 ul li a i:hover {
+  color: #800080;
+}
+
+#logo {
+  /* tamaño del logo que va en todas las paginas*/
+  width: 80px;
+  height: auto;
+}
+
+/**** FIGURES ****/
+figure {
+  text-align: center;
+  align-items: center;
+  border: solid;
+  border-width: 5px;
+  border-radius: 10px;
+  border-color: #800080;
+  width: 300px;
+  margin: 10px;
+}
+figure button {
+  border: solid 2px;
+  border-radius: 3px;
+  border-color: rgba(25, 211, 218, 0.822);
+  background-color: rgb(13, 12, 12);
+  color: #800080;
+  font-size: 1rem;
+  margin: 10px;
+  text-align: center;
+  width: 90%;
+  height: 9%;
+}
+
+/*tamaño de el boton y las imagenes de las figure para index y productos*/
+.prod {
+  /*tamaño de la imagen*/
+  display: flex;
+  width: 200px;
+}
+
+.cap {
+  /* para los figcaption */
+  color: rgba(25, 211, 218, 0.822);
+  font-size: 1.2em;
+}
+
+/**** FORMS ****/
+.formularios {
+  /* formulario de contacto*/
+  background-color: #2c2d2a;
+  border: solid;
+  border-radius: 35px;
+  border-color: rgb(13, 12, 12);
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.formlogin {
+  /*para darle mas alto*/
+  height: 200px;
+}
+
+/****** INDEX ******/
+.headimg {
+  /*la imagen(encabezado)*/
+  width: 1340px;
+}
+
+.grid-fig {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-areas: "fig1 fig2 fig3" "fig4 fig5 fig6";
+  grid-column-gap: 30px;
+  grid-row-gap: 15px;
+}
+
+.f1 {
+  grid-area: fig1;
+}
+
+.f2 {
+  grid-area: fig2;
+}
+
+.f3 {
+  grid-area: fig3;
+}
+
+.f4 {
+  grid-area: fig4;
+}
+
+.f5 {
+  grid-area: fig5;
+}
+
+.f6 {
+  grid-area: fig6;
+}
+
+/* NOSOTROS */
+.img-nosotros {
+  /*el encabezado del apartado nosotros*/
+  height: 440px;
+  width: 100%;
+}
+
+/*mapas*/
+.map {
+  /*el tamaño de los mapas */
+  width: 440px;
+  height: 340px;
+}
+
+.mapas {
+  /*flexbox para los mapas*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 6px;
+}
+
+.text3 {
+  /* background-color para los encabezados de los mapas en nosotros */
+  background-color: #2c2d2a;
+  width: auto;
+}
+
+/**** PRODUCTOS ****/
+.divprodc {
+  /* el div que tiene la clase .divprodc es la que tiene el filtro y los productos*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.divprodc button {
+  background-color: rgb(13, 12, 12);
+  margin-bottom: 15px;
+  /* Boton filtro de productos*/
+}
+.divprodc button .botonproductos {
+  background-color: #800080;
+  list-style: none;
+  text-decoration: none;
+}
+.divprodc button .btn-primary {
+  --bs-btn-hover-bg: #800080;
+  list-style: none;
+  list-style-image: none;
+  text-decoration: none;
+}
+.divprodc button img {
+  display: flex;
+  justify-content: center;
+}
+.divprodc .interior-botom {
+  /*el interior del boton*/
+  background-color: #800080;
+  list-style: none;
+  text-decoration: none;
+}
+.divprodc .ulproductos {
+  /* para la lista que esta cuando apretas el boton del filtro */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.divprodc .separacionlista {
+  /*separacion para la lista de adentro del boton*/
+  margin-left: 20px;
+}
+.divprodc .section-prod {
+  /*Productos*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/**** FOOTER ****/
+footer footer div .container1 {
+  /* es lo que contiene las dos cajas de "preguntas frecuentes" */
+  display: flex;
+  justify-content: flex-start;
+}
+footer .bord {
+  /* el borde de las cajas con "preguntas frecuentes" */
+  border-width: 3px;
+  border-radius: 10px;
+  border: double;
+  border-color: rgb(240, 230, 230);
+  margin: 3px;
+}
+
+.tam {
+  /* iconos de las marcas */
+  width: 55px;
+  height: 49px;
+}
+
+.log {
+  /* los iconos de las redes sociales */
+  width: 55px;
+  height: 55px;
+  padding-top: 15px;
+  padding-right: 8px;
+}
+
+.fotspace {
+  /* espacio entre los svg de redes sociales */
+  margin-bottom: 15px;
+}
+
+/**Inicia responsiv**/
+@media (width < 2000px) {
+  /*menor a 2000px*/
+  .headimg {
+    width: 100%;
+  }
+  /* pagina de login */
+  .formularios {
+    /* pagina de login */
+    width: 68%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+  }
+  /* footer */
+  .responsiv420 {
+    width: 650px;
+    padding: 20px 20px;
+  }
+  .container1 {
+    justify-content: space-around;
+    padding: 10px 10px;
+  }
+  /* logos de las marcas */
+  .tam {
+    /* logos de marcas */
+    width: 60px;
+    height: 55px;
+  }
+  .section-prod {
+    justify-content: center;
+  }
+}
+.header-nosotros {
+  /*para ajustar el tamaño de las letras del apartado nosotros */
+  font-size: 1.2em;
+}
+
+@media (width < 1600px) {
+  /* responsive menos de 1600  */
+  .headimg {
+    width: 100%;
+  }
+  .text {
+    font-size: 1.2em;
+  }
+  /* footer */
+  .responsiv420 {
+    width: 600px;
+    padding: 20px 20px;
+  }
+  .container1 {
+    justify-content: space-around;
+    padding: 10px 10px;
+  }
+  /* pagina de login */
+  .formularios {
+    width: 68%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  .img-nosotros {
+    /* para que la imagen de nosotros q esta en el header se vea bien */
+    width: 100%;
+  }
+}
+@media (width < 1340) {
+  /*menos a 1340px*/
+  .img-nosotros {
+    /*la foto de encabezado del apartado nosotros*/
+    width: 100%;
+  }
+  .header-nosotros {
+    /*para ajustar el tamaño de las letras del apartado nosotros */
+    font-size: 1.1em;
+  }
+  /* responsiv para el apartado de productos */
+  figure {
+    width: 60%;
+    margin: 4px;
+  }
+  figure button {
+    width: 90%;
+    margin: 5px;
+    font-size: 0.9em;
+  }
+}
+@media (width < 1060) {
+  /*menor a 1060*/
+  .col-md-3 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+@media (width < 992px) {
+  /* responsive menos de 992px*/
+  .headimg {
+    width: 100%;
+  }
+  /* pag login */
+  .loginresponsiv {
+    display: column;
+  }
+  .formularios {
+    width: 78%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  /* footer */
+  .responsiv420 {
+    width: 400px;
+    padding: 20px 20px;
+  }
+  .container1 {
+    justify-content: space-around;
+    padding: 10px 10px;
+  }
+  .tam {
+    /* logos de marcas */
+    width: 49px;
+    height: pxxs;
+  }
+  /* productos destacados */
+  figure {
+    width: 60%;
+    margin: 4px;
+  }
+  figure button {
+    width: 90%;
+    margin: 5px;
+    font-size: 0.9em;
+  }
+  .grid-fig {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "fig1 fig2" "fig3 fig4" "fig5 fig6";
+    justify-items: center;
+  }
+  /* nosotros */
+  .mapas {
+    flex-direction: column;
+  }
+  .prod {
+    width: 70%;
+  }
+  /* productos */
+  /* .col-md-3 {
+      flex-basis: 60%;
+      max-width: 60%;
+    } */
+}
+/* hago menos de 660 para los figure */
+@media (width < 660px) {
+  figure {
+    width: 80%;
+    margin: 10px;
+  }
+  figure button {
+    width: 90%;
+    margin: 5px;
+    font-size: 0.9em;
+  }
+  .grid-fig {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "fig1 fig2" "fig3 fig4" "fig5 fig6";
+    justify-items: center;
+    grid-column-gap: 16px;
+  }
+  .prod {
+    width: 70%;
+  }
+  .header-nosotros {
+    /*para ajustar el tamaño de las letras del apartado nosotros */
+    font-size: 1em;
+  }
+  /* tamaños de los mapas en nosotros */
+  .map {
+    width: 100%;
+  }
+  .tamaño-mapa {
+    width: 100%;
+  }
+}
+/* responsive menos de 420 */
+@media (width < 420px) {
+  .headimg {
+    width: 100%;
+  }
+  .responsiv420 {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 0.9em;
+  }
+  .container1 {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .loginresponsiv {
+    display: column;
+  }
+  .formularios {
+    width: 78%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+  }
+  .tam {
+    /* logos de marcas */
+    width: 40px;
+    height: 35px;
+  }
+  .log {
+    /* logos de redes sociales */
+    width: 43px;
+  }
+  figure {
+    width: 75%;
+    margin: 4px;
+  }
+  figure button {
+    width: 90%;
+    margin: 5px;
+    font-size: 0.9em;
+  }
+  .grid-fig {
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: 100%;
+    grid-template-areas: "fig1" "fig2" "fig3" "fig4" "fig5" "fig6";
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  /* tamaños de los mapas en nosotros */
+  .map {
+    width: 100%;
+  }
+  .tamaño-mapa {
+    width: 100%;
+  }
+  /* formulario de contacto */
+  .form2 {
+    width: 100%;
+    height: 500px;
+    font-size: 1em;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

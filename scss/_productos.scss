@@ -1,0 +1,50 @@
+/**** PRODUCTOS ****/
+
+.divprodc{
+    /* el div que tiene la clase .divprodc es la que tiene el filtro y los productos*/
+     display: flex;
+     flex-direction: column;
+      align-items: flex-start;
+    button {
+        background-color: $secondarycolor;
+        margin-bottom: 15px;
+      /* Boton filtro de productos*/
+        .botonproductos{
+            background-color: $maincolor;
+            list-style: none;
+            text-decoration: none;}
+        .btn-primary{
+            --bs-btn-hover-bg: #{$maincolor};
+            list-style: none;
+            list-style-image: none;
+            text-decoration: none;
+        }
+        img{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .interior-botom{
+         /*el interior del boton*/
+        background-color: $maincolor;
+        list-style: none;
+        text-decoration: none;}
+    .ulproductos{
+        /* para la lista que esta cuando apretas el boton del filtro */
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+    }
+    .separacionlista{
+        /*separacion para la lista de adentro del boton*/
+        margin-left:20px;
+    }
+
+    .section-prod{
+         /*Productos*/
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+    }
+
+}

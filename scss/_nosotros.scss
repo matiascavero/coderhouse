@@ -1,0 +1,24 @@
+/* NOSOTROS */
+.img-nosotros{
+    /*el encabezado del apartado nosotros*/ 
+    height:440px ;
+    width:100%;
+}
+/*mapas*/
+.map{
+    /*el tamaño de los mapas */
+    width: 440px;
+    height: 340px;
+}
+.mapas{
+    /*flexbox para los mapas*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 6px;
+}
+.text3{
+    /* background-color para los encabezados de los mapas en nosotros */
+    background-color: $keycolor;
+    width: auto;
+}

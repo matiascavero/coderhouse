@@ -1,0 +1,12 @@
+ /***mixin figure***/
+  @mixin figure1($textgn,$alignitm,$bord,$bord-wid,$border-rad,$bord-co,$size,$margin){
+      
+      text-align: $textgn;
+      align-items: $alignitm;
+      border: $bord;
+      border-width: $bord-wid;
+      border-radius: $border-rad;
+      border-color: $bord-co;
+      width: $size;
+      margin: $margin;
+  }

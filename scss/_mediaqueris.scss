@@ -1,0 +1,298 @@
+/**Inicia responsiv**/
+
+@media(width<2000px){
+    /*menor a 2000px*/
+    .headimg{
+      width: 100%;
+      
+    }
+       /* pagina de login */
+      .formularios{
+         /* pagina de login */
+         width: 68%;
+         height:400px;
+         display: flex;
+         flex-direction: column; 
+         font-size: $textsm;
+}
+       /* footer */
+    .responsiv420{
+        width:650px;
+        padding: 20px 20px;
+   }
+       .container1{
+        justify-content: space-around;
+        padding: 10px 10px;
+    }
+    /* logos de las marcas */
+    .tam{
+        /* logos de marcas */
+        width: 60px;
+        height: $pxmd;
+    }
+    .section-prod{
+        justify-content: center;
+    }
+}
+.header-nosotros{
+/*para ajustar el tamaño de las letras del apartado nosotros */
+font-size: $textlg;
+}
+
+@media (width < 1600px){
+/* responsive menos de 1600  */
+         
+       .headimg{
+       width: 100%;
+       }
+       .text{
+        font-size: $textlg;  
+       }
+       /* footer */
+    .responsiv420{
+        width:600px;
+        padding: 20px 20px;
+   }
+       .container1{
+        justify-content: space-around;
+        padding: 10px 10px;
+    }
+    /* pagina de login */
+    .formularios{
+        width: 68%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+}
+.img-nosotros{
+    /* para que la imagen de nosotros q esta en el header se vea bien */
+    width: $pxxl;
+}
+
+}
+   
+   @media(width<1340){
+    /*menos a 1340px*/
+    .img-nosotros{
+        /*la foto de encabezado del apartado nosotros*/
+        width: $pxxl;
+    }
+    .header-nosotros{
+        /*para ajustar el tamaño de las letras del apartado nosotros */
+    font-size: $textmd;
+   }
+   /* responsiv para el apartado de productos */
+   figure{
+    width: 60%;
+    margin: 4px;
+}
+figure button{
+    width: 90%;
+    margin: 5px;
+    font-size: 0.9em;
+    
+}
+   }
+   @media(width<1060){
+    /*menor a 1060*/
+    .col-md-3 {
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+      
+   }
+
+
+@media (width < 992px){
+/* responsive menos de 992px*/
+    .headimg{
+        width: $pxxl;
+    }
+
+    /* pag login */
+       .loginresponsiv{
+        display: column;
+        
+        
+    } 
+    .formularios{
+        width: 78%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    /* footer */
+    .responsiv420{
+        width:400px;
+        padding: 20px 20px;
+       
+        
+   }
+       .container1{
+        justify-content: space-around;
+        padding: 10px 10px;
+    }
+     
+    .tam{
+        /* logos de marcas */
+        width: $pxsm;
+        height: pxxs;
+    }
+    /* productos destacados */
+    figure{
+        width: 60%;
+        margin: 4px;
+    }
+    figure button{
+        width: 90%;
+        margin: 5px;
+        font-size: 0.9em;
+        
+    }
+    .grid-fig{
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "fig1 fig2"
+    "fig3 fig4"
+    "fig5 fig6";
+    justify-items: center;
+    }
+    /* nosotros */
+    .mapas{
+        flex-direction: column;
+        
+    }
+   
+    .prod{
+        width: 70% ;
+    }
+    /* productos */
+    /* .col-md-3 {
+        flex-basis: 60%;
+        max-width: 60%;
+      } */
+
+    
+}
+/* hago menos de 660 para los figure */
+@media ( width< 660px){
+    figure{
+        width: 80%;
+        margin: 10px;
+    }
+    figure button{
+        width: 90%;
+        margin: 5px;
+        font-size: 0.9em;
+    }
+    .grid-fig{
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "fig1 fig2"
+    "fig3 fig4"
+    "fig5 fig6";
+    justify-items: center;
+    grid-column-gap: 16px;
+    }
+    .prod{
+        width: 70%;
+    }
+    .header-nosotros{
+        /*para ajustar el tamaño de las letras del apartado nosotros */
+    font-size: $textsm;
+   }
+    /* tamaños de los mapas en nosotros */
+   .map{
+   width: $pxxl;
+   }
+   .tamaño-mapa{
+    width: $pxxl;
+   }
+}
+
+/* responsive menos de 420 */
+@media ( width< 420px){
+    .headimg{
+       width: $pxxl;
+    }
+    .responsiv420{
+        width: $pxxl;
+        padding: 10px 10px;
+        font-size: 0.9em;
+       
+       
+        
+       }
+       .container1{
+        justify-content: center;
+        flex-direction: column;
+            }
+       
+    .loginresponsiv{
+        display: column;
+        
+        
+    } 
+    .formularios{
+        width: 78%;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .tam{
+        /* logos de marcas */
+        width: $pxss;
+        height: 35px;
+    }
+    .log{
+        /* logos de redes sociales */
+        width: $pxxs;
+        
+    }
+    figure{
+        width: 75%;
+        margin: 4px;
+    }
+    figure button{
+        width: 90%;
+        margin: 5px;
+        font-size: 0.9em;
+        
+    }
+   
+    .grid-fig{
+    grid-template-rows: auto auto auto auto auto auto ;
+    grid-template-columns: $pxxl;
+    grid-template-areas: 
+    "fig1"
+    "fig2"
+    "fig3"
+    "fig4"
+    "fig5"
+    "fig6";
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+    }
+    /* tamaños de los mapas en nosotros */
+   .map{
+    width: $pxxl;
+    
+    }
+    .tamaño-mapa{
+     width: $pxxl;
+    }
+/* formulario de contacto */
+.form2{
+    width: $pxxl;
+    height: 500px;
+    font-size: $textsm;
+}  
+}

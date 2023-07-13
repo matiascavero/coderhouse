@@ -1,0 +1,53 @@
+/* todo lo general de mi proyecto */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    /* fondo de pantalla */
+    background-color:  $maincolor;
+}
+h2{
+    /* titulos de h2 */
+    font-size: $textxl;
+}
+
+.whit{
+    /* color para las letras */
+    color: $white;
+}
+
+/* fondos para los textos */
+.text{
+    background-color: $secondarycolor;
+     margin-top: 20px;  
+}
+ .text2{
+     background-color: $keycolor;
+ }
+ 
+.center{
+   /* para centrar textos */
+    text-align: center;
+}
+
+
+.separarnav{
+/* para separar las cosas que quedan debajo de la nav */
+    margin-top: 120px;
+}
+.fijo{
+    /*para palabras que queden con el color primario fijo*/ 
+    color: $maincolor;
+}
+i{
+    &:hover{
+        /*para que las palabras con <i> cambien de color cuando el mouse pasa por encima*/
+                color: $maincolor;
+    }
+}
+
+
+
+

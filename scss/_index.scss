@@ -1,0 +1,43 @@
+/****** INDEX ******/
+.headimg{
+    /*la imagen(encabezado)*/
+    width: 1340px;
+}
+
+.grid-fig{
+    display: grid;
+    grid-template-rows:  auto auto;
+    grid-template-columns: 33% 33% 33% ;
+    grid-template-areas: 
+    "fig1 fig2 fig3"
+    "fig4 fig5 fig6";
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+
+}
+
+.f1{
+  grid-area: fig1;
+  
+}
+.f2{
+  grid-area: fig2;
+ 
+}
+.f3{
+  grid-area: fig3;
+  
+}
+.f4{
+  grid-area: fig4;
+  
+}
+.f5{
+  grid-area: fig5;
+  
+
+}
+.f6{
+  grid-area: fig6;
+  
+}

@@ -1,0 +1,31 @@
+/**** FIGURES ****/
+figure{
+    @include figure1 (center,center,solid,5px,10px,$maincolor,300px,10px);
+    button{
+        border: solid 2px ;
+        border-radius: 3px;
+        border-color: $addtocartbutton;
+        background-color: $secondarycolor;
+        color:  $maincolor;
+        font-size: $textrem;
+        margin: 10px;
+        text-align: center;
+        width: 90%;
+        height: 9%;
+        
+    } 
+
+}
+
+/*tamaño de el boton y las imagenes de las figure para index y productos*/
+.prod{
+    /*tamaño de la imagen*/
+    display: flex;
+    width: 200px;
+ 
+}
+.cap {
+    /* para los figcaption */
+    color: $addtocartbutton;
+    font-size: 1.2em;
+}
