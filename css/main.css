@@ -348,6 +348,10 @@ footer .bord {
 
 @media (width < 1600px) {
   /* responsive menos de 1600  */
+  /*para ajustar el tamaño de la letra*/
+  body {
+    font-size: 1em;
+  }
   .headimg {
     width: 100%;
   }

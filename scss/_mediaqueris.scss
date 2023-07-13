@@ -15,12 +15,11 @@
         height: 500px;
       }
 
-
-
 }
 
 @media(width<2000px){
     /*menor a 2000px*/
+   
     .headimg{
       width: 100%;
       
@@ -60,7 +59,10 @@ font-size: $textlg;
 
 @media (width < 1600px){
 /* responsive menos de 1600  */
-         
+/*para ajustar el tamaño de la letra*/
+body{
+    font-size: $textsm;
+}
        .headimg{
        width: 100%;
        }
@@ -92,6 +94,8 @@ font-size: $textlg;
    
    @media(width<1340){
     /*menos a 1340px*/
+   
+    
     .img-nosotros{
         /*la foto de encabezado del apartado nosotros*/
         width: $pxxl;
@@ -118,7 +122,6 @@ figure button{
         flex-basis: 50%;
         max-width: 50%;
       }
-      
    }
 
 
