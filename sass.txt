@@ -1,6 +1,2 @@
 npm run sass:watch
-///////MEDIAQUERIS///////
 
-mejorar el container1 del footer en responsiv.
-hacer que las imagenes de los productos se centren en el figure
-y hacer alguna mejora en el apartado de nosotros

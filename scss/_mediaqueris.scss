@@ -1,5 +1,24 @@
 /**Inicia responsiv**/
 
+
+@media(width<2400px){
+      /*menor a 2400px*/
+      /*index*/
+      body{
+        font-size: $textlg;
+      }
+      .headimg{
+        /*imagen del index*/
+        width: $pxxl;
+      }
+      .formlogin{
+        height: 500px;
+      }
+
+
+
+}
+
 @media(width<2000px){
     /*menor a 2000px*/
     .headimg{
@@ -10,7 +29,7 @@
       .formularios{
          /* pagina de login */
          width: 68%;
-         height:400px;
+         height:500px;
          display: flex;
          flex-direction: column; 
          font-size: $textsm;
@@ -60,7 +79,7 @@ font-size: $textlg;
     /* pagina de login */
     .formularios{
         width: 68%;
-        height: 400px;
+        height: 470px;
         display: flex;
         flex-direction: column;
 }
@@ -117,7 +136,7 @@ figure button{
     } 
     .formularios{
         width: 78%;
-        height: 400px;
+        height: 450px;
         display: flex;
         flex-direction: column;
         
@@ -162,20 +181,19 @@ figure button{
     }
     /* nosotros */
     .mapas{
+        /*para que los mapas queden centrados en tablet*/
         flex-direction: column;
-        
+        align-items: center;
+    }
+    .tamaño-mapa{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
    
     .prod{
         width: 70% ;
-    }
-    /* productos */
-    /* .col-md-3 {
-        flex-basis: 60%;
-        max-width: 60%;
-      } */
-
-    
+    }  
 }
 /* hago menos de 660 para los figure */
 @media ( width< 660px){
@@ -204,15 +222,34 @@ figure button{
     .header-nosotros{
         /*para ajustar el tamaño de las letras del apartado nosotros */
     font-size: $textsm;
-   }
-    /* tamaños de los mapas en nosotros */
-   .map{
-   width: $pxxl;
-   }
-   .tamaño-mapa{
+   } 
+   .formularios{
     width: $pxxl;
+    height: 470px;
    }
 }
+/**/
+@media(width<470px){
+    /*para sacar el align items end de el formulario del login ya que quedaba mal*/
+    .align-items-end {
+        align-items: initial !important;
+      }
+      figure{
+        /* para que el "agregar al carrito" en el boton de los figure quede bien*/
+       button{
+         height: 50px;
+         margin: 5px 5px;
+       }
+        
+      }
+      .cap{
+        font-size: $textxs;
+    }
+
+      
+}
+
+
 
 /* responsive menos de 420 */
 @media ( width< 420px){
@@ -232,19 +269,13 @@ figure button{
         flex-direction: column;
             }
        
-    .loginresponsiv{
-        display: column;
-        
-        
-    } 
+    
     .formularios{
-        width: 78%;
-        height: 230px;
-        display: flex;
-        flex-direction: column;
-        
-        
+        width: $pxxl;
+        height: 350px; 
+        margin: 30px 0;
     }
+    
     .tam{
         /* logos de marcas */
         width: $pxss;
@@ -287,12 +318,12 @@ figure button{
     
     }
     .tamaño-mapa{
-     width: $pxxl;
+     width: 80%;
     }
 /* formulario de contacto */
 .form2{
     width: $pxxl;
-    height: 500px;
+    height: 550px;
     font-size: $textsm;
 }  
 }

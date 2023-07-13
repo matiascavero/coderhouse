@@ -106,8 +106,10 @@ figure button {
 /*tamaño de el boton y las imagenes de las figure para index y productos*/
 .prod {
   /*tamaño de la imagen*/
-  display: flex;
   width: 200px;
+  display: flex;
+  /* para que quede en el centro del figure */
+  margin: 0 auto;
 }
 
 .cap {
@@ -149,6 +151,7 @@ figure button {
   grid-template-rows: auto auto;
   grid-template-columns: 33% 33% 33%;
   grid-template-areas: "fig1 fig2 fig3" "fig4 fig5 fig6";
+  justify-items: center;
   grid-column-gap: 30px;
   grid-row-gap: 15px;
 }
@@ -256,10 +259,11 @@ figure button {
 }
 
 /**** FOOTER ****/
-footer footer div .container1 {
+footer .container1 {
   /* es lo que contiene las dos cajas de "preguntas frecuentes" */
   display: flex;
   justify-content: flex-start;
+  justify-content: space-around;
 }
 footer .bord {
   /* el borde de las cajas con "preguntas frecuentes" */
@@ -290,6 +294,20 @@ footer .bord {
 }
 
 /**Inicia responsiv**/
+@media (width < 2400px) {
+  /*menor a 2400px*/
+  /*index*/
+  body {
+    font-size: 1.2em;
+  }
+  .headimg {
+    /*imagen del index*/
+    width: 100%;
+  }
+  .formlogin {
+    height: 500px;
+  }
+}
 @media (width < 2000px) {
   /*menor a 2000px*/
   .headimg {
@@ -299,7 +317,7 @@ footer .bord {
   .formularios {
     /* pagina de login */
     width: 68%;
-    height: 400px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     font-size: 1em;
@@ -348,7 +366,7 @@ footer .bord {
   /* pagina de login */
   .formularios {
     width: 68%;
-    height: 400px;
+    height: 470px;
     display: flex;
     flex-direction: column;
   }
@@ -396,7 +414,7 @@ footer .bord {
   }
   .formularios {
     width: 78%;
-    height: 400px;
+    height: 450px;
     display: flex;
     flex-direction: column;
   }
@@ -432,16 +450,18 @@ footer .bord {
   }
   /* nosotros */
   .mapas {
+    /*para que los mapas queden centrados en tablet*/
     flex-direction: column;
+    align-items: center;
+  }
+  .tamaño-mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .prod {
     width: 70%;
   }
-  /* productos */
-  /* .col-md-3 {
-      flex-basis: 60%;
-      max-width: 60%;
-    } */
 }
 /* hago menos de 660 para los figure */
 @media (width < 660px) {
@@ -468,12 +488,26 @@ footer .bord {
     /*para ajustar el tamaño de las letras del apartado nosotros */
     font-size: 1em;
   }
-  /* tamaños de los mapas en nosotros */
-  .map {
+  .formularios {
     width: 100%;
+    height: 470px;
   }
-  .tamaño-mapa {
-    width: 100%;
+}
+/**/
+@media (width < 470px) {
+  /*para sacar el align items end de el formulario del login ya que quedaba mal*/
+  .align-items-end {
+    align-items: initial !important;
+  }
+  figure {
+    /* para que el "agregar al carrito" en el boton de los figure quede bien*/
+  }
+  figure button {
+    height: 50px;
+    margin: 5px 5px;
+  }
+  .cap {
+    font-size: 0.8em;
   }
 }
 /* responsive menos de 420 */
@@ -490,14 +524,10 @@ footer .bord {
     justify-content: center;
     flex-direction: column;
   }
-  .loginresponsiv {
-    display: column;
-  }
   .formularios {
-    width: 78%;
-    height: 230px;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: 350px;
+    margin: 30px 0;
   }
   .tam {
     /* logos de marcas */
@@ -530,12 +560,12 @@ footer .bord {
     width: 100%;
   }
   .tamaño-mapa {
-    width: 100%;
+    width: 80%;
   }
   /* formulario de contacto */
   .form2 {
     width: 100%;
-    height: 500px;
+    height: 550px;
     font-size: 1em;
   }
 }

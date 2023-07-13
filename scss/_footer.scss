@@ -1,34 +1,38 @@
 /**** FOOTER ****/
 footer{
-     footer div .container1{
+        .container1{
         /* es lo que contiene las dos cajas de "preguntas frecuentes" */
-      display: flex;
-      justify-content: flex-start;
+          display: flex;
+          justify-content: flex-start;
+          justify-content: space-around;
+
       
-   }
-   .bord{
+         }
+        .bord{
     /* el borde de las cajas con "preguntas frecuentes" */
-    border-width:3px;
-    border-radius: 10px;
-    border: double;
-    border-color: $white;
-    margin: 3px;
-  }
+          border-width:3px;
+          border-radius: 10px;
+          border: double;
+          border-color: $white;
+          margin: 3px;
+         }
 }
      
-   .tam{
-    /* iconos de las marcas */
-    width: $pxmd;
-    height: $pxsm;
+        .tam{
+             /* iconos de las marcas */
+          width: $pxmd;
+          height: $pxsm;
    }
-   .log{
-    /* los iconos de las redes sociales */
-    width: $pxmd;
-    height: $pxmd;
-    padding-top: 15px;
-    padding-right: 8px;
-   }
-   .fotspace{
-    /* espacio entre los svg de redes sociales */
-    margin-bottom:15px;
-   }
+       .log{
+           /* los iconos de las redes sociales */
+          width: $pxmd;
+          height: $pxmd;
+          padding-top: 15px;
+          padding-right: 8px;
+          }
+        .fotspace{
+         /* espacio entre los svg de redes sociales */
+          margin-bottom:15px;
+
+         
+  }
