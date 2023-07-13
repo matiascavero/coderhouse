@@ -152,7 +152,7 @@ figure button {
   grid-template-columns: 33% 33% 33%;
   grid-template-areas: "fig1 fig2 fig3" "fig4 fig5 fig6";
   justify-items: center;
-  grid-column-gap: 30px;
+  grid-column-gap: 15px;
   grid-row-gap: 15px;
 }
 
@@ -412,6 +412,16 @@ footer .bord {
   .headimg {
     width: 100%;
   }
+  figure {
+    /* para que el "agregar al carrito" en el boton de los figure quede bien*/
+  }
+  figure button {
+    height: 50px;
+    margin: 5px 5px;
+  }
+  .cap {
+    font-size: 0.8em;
+  }
   /* pag login */
   .loginresponsiv {
     display: column;
@@ -502,16 +512,6 @@ footer .bord {
   /*para sacar el align items end de el formulario del login ya que quedaba mal*/
   .align-items-end {
     align-items: initial !important;
-  }
-  figure {
-    /* para que el "agregar al carrito" en el boton de los figure quede bien*/
-  }
-  figure button {
-    height: 50px;
-    margin: 5px 5px;
-  }
-  .cap {
-    font-size: 0.8em;
   }
 }
 /* responsive menos de 420 */

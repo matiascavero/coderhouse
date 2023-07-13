@@ -130,6 +130,17 @@ figure button{
     .headimg{
         width: $pxxl;
     }
+    figure{
+        /* para que el "agregar al carrito" en el boton de los figure quede bien*/
+       button{
+         height: 50px;
+         margin: 5px 5px;
+       }
+        
+      }
+      .cap{
+        font-size: $textxs;
+    }
 
     /* pag login */
        .loginresponsiv{
@@ -236,24 +247,8 @@ figure button{
     /*para sacar el align items end de el formulario del login ya que quedaba mal*/
     .align-items-end {
         align-items: initial !important;
-      }
-      figure{
-        /* para que el "agregar al carrito" en el boton de los figure quede bien*/
-       button{
-         height: 50px;
-         margin: 5px 5px;
-       }
-        
-      }
-      .cap{
-        font-size: $textxs;
-    }
-
-      
+      }  
 }
-
-
-
 /* responsive menos de 420 */
 @media ( width< 420px){
     .headimg{
