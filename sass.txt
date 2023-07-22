@@ -1,8 +1,4 @@
 npm run sass:watch
 
 
-Y te animo a darle un poco más de estilo a las páginas de contacto e iniciar sesión. Lo demás viene muy bien!
-
-
-
  Te faltó aplicar SEO al sitio

@@ -19,6 +19,7 @@
 }
 .text3{
     /* background-color para los encabezados de los mapas en nosotros */
-    background-color: $keycolor;
+    // background-color: $keycolor;
+    background: linear-gradient(90deg, rgba(85,18,18,1) 22%, rgba(77,59,59,1) 59%, rgba(74,58,35,1) 100%);
     width: auto;
 }
