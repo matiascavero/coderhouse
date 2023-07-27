@@ -6,15 +6,19 @@ figure{
         border-radius: 3px;
         border-color: $addtocartbutton;
         background-color: $secondarycolor;
-        color:  $maincolor;
         font-size: $textrem;
         margin: 10px;
         text-align: center;
         width: 90%;
         height: 9%;
-    } 
 
-}
+         a{
+            color:  $maincolor;
+            text-decoration: none !important;
+           }   
+    } 
+    
+} 
 
 /*tamaño de el boton y las imagenes de las figure para index y productos*/
 .prod{

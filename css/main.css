@@ -95,12 +95,15 @@ figure button {
   border-radius: 3px;
   border-color: rgba(25, 211, 218, 0.822);
   background-color: rgb(13, 12, 12);
-  color: #800080;
   font-size: 1rem;
   margin: 10px;
   text-align: center;
   width: 90%;
   height: 9%;
+}
+figure button a {
+  color: #800080;
+  text-decoration: none !important;
 }
 
 /*tamaño de el boton y las imagenes de las figure para index y productos*/
@@ -572,6 +575,67 @@ footer .bord {
     height: 550px;
     font-size: 1em;
   }
+}
+/*Pagina error 404*/
+.body-error-404 {
+  background-color: black;
+}
+
+.main-error {
+  /*para poner todo el contenido centrado en la pagina*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-error-404 {
+  /*para centrar lo de adentro*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: changeColor 9s infinite;
+  width: 100%;
+}
+
+.redirection {
+  /*el boton para volver a inicio*/
+  background: radial-gradient(circle, rgb(226, 225, 222) 36%, rgba(252, 70, 184, 0.6054796919) 82%);
+  /*para centrar el contenido*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.redirection a {
+  text-decoration: none;
+  color: #800080;
+}
+
+section {
+  /*section que tiene ala imagen*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+section img {
+  width: 70%;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: violet;
+  } /*color inicial*/
+  50% {
+    background-color: red;
+  } /* color a la mitad de la animacion */
+  75% {
+    background-color: green;
+  } /* Color en el 75% de la animación */
+  100% {
+    background-color: rgb(240, 230, 230);
+  } /*color en el final de la animacion*/
 }
 
 /*# sourceMappingURL=main.css.map */
