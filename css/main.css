@@ -310,6 +310,9 @@ footer .bord {
   .formlogin {
     height: 500px;
   }
+  .redirection {
+    height: 100px;
+  }
 }
 @media (width < 2000px) {
   /*menor a 2000px*/
@@ -576,6 +579,11 @@ footer .bord {
     font-size: 1em;
   }
 }
+/*pagina error 404*/
+.img-error {
+  width: 100%;
+}
+
 /*Pagina error 404*/
 .body-error-404 {
   background-color: black;

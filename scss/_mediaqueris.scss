@@ -14,7 +14,9 @@
       .formlogin{
         height: 500px;
       }
-
+ .redirection{
+    height: 100px;
+ }
 }
 
 @media(width<2000px){
@@ -324,4 +326,8 @@ figure button{
     height: 550px;
     font-size: $textsm;
 }  
+}
+/*pagina error 404*/
+.img-error{
+    width: 100%;
 }
