@@ -16,6 +16,9 @@
 ## Estado del proyecto
 ##### En cuanto al aspecto y estilo del sitio, me siento satisfecho con el resultado actual, considero que está terminado. Sin embargo, en lo que respecta al desarrollo del back-end, todavía tengo mucho por aprender y aplicar en esta página. Estoy entusiasmado por adquirir nuevos conocimientos y habilidades para completar la funcionalidad y hacer que la página sea totalmente funcional. ¡Seguiré trabajando duro para lograr ese objetivo!
 
+### Error 404
+##### La pagina de error 404 se encuentra apretando el boton de "agregar al carrito".
+
 #### Links
 ##### Pagina subida a vercel
  - https://coderhouse-delta.vercel.app/
